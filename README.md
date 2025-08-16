@@ -32,9 +32,6 @@ This system simulates a railway ticket booking system with features like seat al
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Java JDK 8 or higher
-- Command line interface (Terminal/CMD/PowerShell)
 
 ### Installation & Running
 
@@ -191,33 +188,7 @@ java SystemTest
 - Backup and recovery mechanisms
 - Validation at multiple levels
 
-## 🛠️ Customization Options
 
-### Adding New Trains
-```java
-trainManager.addTrain("99999", "Express Special");
-Train newTrain = trainManager.getTrain("99999");
-newTrain.setSeatsForClass("AC", 25);
-newTrain.setSeatsForClass("Sleeper", 75);
-```
-
-### Modifying Seat Configuration
-```java
-Train train = trainManager.getTrain("12345");
-train.setSeatsForClass("AC", 50); // Increase AC seats to 50
-```
-
-### Custom PNR Format
-Modify the `generatePNR()` method in `PassengerManager.java` to change PNR format.
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **Compilation Errors**: Ensure all Java files are in the same directory
-2. **File Access Issues**: Check write permissions for data files
-3. **Memory Issues**: Increase JVM heap size if handling large datasets
-4. **Data Corruption**: Use backup files or clear data files to reset
 
 ### Data Recovery
 ```bash
@@ -239,24 +210,4 @@ java RailwayReservationSystem
 - **Advanced Search**: Date-based booking, route search
 - **Reporting**: Analytics and business intelligence
 
-## 👥 Contributing
 
-1. Fork the repository
-2. Create feature branch
-3. Implement changes with tests
-4. Submit pull request with detailed description
-
-## 📄 License
-
-This project is created for educational purposes. Feel free to use and modify according to your needs.
-
-## 📞 Support
-
-For issues or questions:
-1. Check the troubleshooting section
-2. Review the system test for usage examples
-3. Examine the source code for implementation details
-
----
-
-**Happy Coding! 🚂**
